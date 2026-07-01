@@ -1,0 +1,52 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --navy: #0E1B33;
+  --navy-2: #152B4E;
+  --ocean: #29B6E8;
+  --ocean-deep: #0B84B5;
+  --bca: #0B4EA2;
+  --bca-2: #1663C7;
+  --bg: #F2F5F9;
+  --card: #fff;
+  --line: #E3E8F0;
+  --ink: #132038;
+  --muted: #65728C;
+  --muted-2: #93A0B8;
+  --green: #2E9F63;
+  --green-bg: #E7F7ED;
+  --amber: #B4720A;
+  --amber-bg: #FCF1DE;
+  --red: #D24B4B;
+  --red-bg: #FCEBEB;
+}
+
+body {
+  @apply font-sans;
+}
+
+.ocean-shell {
+  @apply min-h-screen flex flex-col;
+}
+
+.kpi {
+  @apply cursor-pointer transition-all hover:shadow-lg hover:-translate-y-0.5;
+}
+
+.badge {
+  @apply inline-block px-3 py-1 rounded-full text-xs font-bold;
+}
+
+.badge.b-green {
+  @apply bg-[var(--green-bg)] text-[var(--green)];
+}
+
+.badge.b-amber {
+  @apply bg-[var(--amber-bg)] text-[var(--amber)];
+}
+
+.badge.b-red {
+  @apply bg-[var(--red-bg)] text-[var(--red)];
+}
